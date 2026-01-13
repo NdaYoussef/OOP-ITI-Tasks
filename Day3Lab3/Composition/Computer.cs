@@ -9,7 +9,7 @@ namespace Composition
     internal class Computer
     {
         public string Model { get; set; }
-        public CPU CPU;
+        public CPU CPU = new("");
 
         public Computer(string model, string cpuModel)
         {
