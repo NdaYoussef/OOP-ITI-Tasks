@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\.Net\\ITI\\Lab1Part3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53CDDCB8-9056-4EB8-A9D2-4A5538F48AB7}|Lab1Part3.csproj|f:\\.net\\iti\\lab1part3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53CDDCB8-9056-4EB8-A9D2-4A5538F48AB7}|Lab1Part3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53CDDCB8-9056-4EB8-A9D2-4A5538F48AB7}|Lab1Part3.csproj|f:\\.net\\iti\\lab1part3\\3dpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53CDDCB8-9056-4EB8-A9D2-4A5538F48AB7}|Lab1Part3.csproj|solutionrelative:3dpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "3DPoint.cs",
+              "DocumentMoniker": "F:\\.Net\\ITI\\Lab1Part3\\3DPoint.cs",
+              "RelativeDocumentMoniker": "3DPoint.cs",
+              "ToolTip": "F:\\.Net\\ITI\\Lab1Part3\\3DPoint.cs",
+              "RelativeToolTip": "3DPoint.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T12:17:53.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\.Net\\ITI\\Lab1Part3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\.Net\\ITI\\Lab1Part3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBIAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T12:12:12.785Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
