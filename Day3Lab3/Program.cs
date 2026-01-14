@@ -20,8 +20,20 @@
 
             #region Composition #3
 
-            Closet closet = new Closet("BedRoom", 3);
-            closet.ShowClosetShape();
+
+            List<Shelf> shelf = new List<Shelf>()
+            {
+                new Shelf(1),
+                new Shelf(2),
+                new Shelf(3),
+                new Shelf(4),
+                new Shelf(5),
+            };
+            int shelfs = shelf.Count;
+                
+            
+            Closet closet = new Closet("BedRoom",shelfs);
+            closet.ShowTotalNoOfShelfes();
             #endregion
 
         }

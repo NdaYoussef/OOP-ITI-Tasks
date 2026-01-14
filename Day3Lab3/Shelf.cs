@@ -8,10 +8,10 @@ namespace Composition
 {
     internal class Shelf
     {
-        public int Number {  get; set; }
-        public Shelf(int numbers) 
+       public int Id {  get; set; }
+        public Shelf(int id)
         {
-        Number = numbers;
+        Id = id;
         }
     }
 }
