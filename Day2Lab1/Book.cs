@@ -9,39 +9,34 @@ namespace LabDay2
 {
     internal class Book
     {
-        [Required]
         public string Title;
-        [Required]
         string Author;
         string ISBN;
         int PublicationYear;
         bool IsAvailable = true;
 
-
-        //Paramtless ctor
+        //Default ctor
         public Book()
         {
-            
+            Title = "Unknown";
+            Author = "Unknown";
+            ISBN = "N/A";
+            PublicationYear = 0;
+            IsAvailable = true;
         }
-
 
         //paramterized ctor
-        public Book(string title, string author, string ISBN, int publicationYear, bool isAvailable)
+        public Book(string title, string author, string isbn, int publicationYear, bool isAvailable)
         {
             Title = title;
             Author = author;
-            this.ISBN = ISBN;
+            ISBN = isbn;
             PublicationYear = publicationYear;
             IsAvailable = isAvailable;
-                
         }
 
-        //overloaded ctor
-        public Book(string title, string author, string ISBN = "UnKnown", int publicationYear = 2026)
-        {
-            Author = author;
-            Title = title;
-        }
+
+        
 
         public void DisplayInfo()
         {

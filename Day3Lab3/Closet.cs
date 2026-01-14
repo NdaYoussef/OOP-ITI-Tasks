@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Composition
+﻿namespace Composition
 {
     internal class Closet
     {
@@ -12,7 +6,13 @@ namespace Composition
 
        public int _totalNumberOfShelfs;
 
-        public List<Shelf> _Shelfs =new();//new List<Shelf>();
+        public List<Shelf> _Shelfs =  {
+                new Shelf(1),
+                new Shelf(2),
+                new Shelf(3),
+                new Shelf(4),
+                new Shelf(5),
+            };//new List<Shelf>();
 
         public Closet(string name, int totalNumberOfShelfs)//, List<Shelf> Shelfes)
         {
