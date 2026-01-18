@@ -13,7 +13,7 @@ namespace SystemObjectMethods
         public string Grade;
 
 
-
+       
         public Student(string name, int id, string grade)
         {
             Name = name;
@@ -32,7 +32,10 @@ namespace SystemObjectMethods
             return base.ToString();
         }
 
-
+        protected object MemberwiseClone()
+        {
+            return MemberwiseClone();
+        }
 
         public Student ShallowCopy()
         {
