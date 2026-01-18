@@ -23,8 +23,9 @@
 
 
 
-            BankAccount bankAccount = new BankAccount();
-            bankAccount(account1 + account2);
+            BankAccount bankAccount =+ account2;
+            Console.WriteLine($"value of summtion is: {bankAccoun }");
+           
 
         }
     }

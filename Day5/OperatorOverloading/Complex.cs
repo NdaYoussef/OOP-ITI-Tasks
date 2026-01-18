@@ -47,9 +47,10 @@ namespace OperatorOverloading
 
         public static Complex operator ++(Complex complex)
         {
+            Complex complex1 = new Complex(complex.Real,complex.Img);
             complex.Real++;  
             complex.Img++;
-            return complex;
+            return complex1;
         }
 
 

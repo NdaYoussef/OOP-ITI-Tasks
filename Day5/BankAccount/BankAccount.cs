@@ -16,10 +16,7 @@ namespace BankAccount
         public static int totalaccount = 0;
         private static double _totalBankBalance = 0.0;
 
-        public BankAccount()
-        {
-
-        }
+       
         public BankAccount(string name, double InitialBalance)
         {
             _accountHolder = name;
@@ -74,19 +71,30 @@ namespace BankAccount
         }
 
 
-        public static BankAccount operator +(BankAccount a, BankAccount b)
+        public static BankAccount operator +(BankAccount a , BankAccount b)
         {
+            if(a == null || b== null)
+            {
+                return null;
+            }
+            return new BankAccount(a._accountHolder, (a._balance+b._balance));
 
-            BankAccount joint = new BankAccount();
-            joint._accountHolder = a._accountHolder + b._accountHolder;
-            Console.WriteLine($"result of add operator overloading of 2 objects :{joint._accountHolder}");
+            //BankAccount joint = new BankAccount(a._accountHolder,a._balance);
+            //joint._accountHolder = $"{a._accountHolder} & {joint._accountHolder}";
+            //Console.WriteLine($"result of add operator overloading of 2 objects :{joint._accountHolder}");
 
-            joint._balance = a._balance + b._balance;
-            Console.WriteLine($"Sum of total balance: {joint._balance} ");
+            //joint._balance = a._balance + joint._balance;
+            //Console.WriteLine($"Sum of total balance: {joint._balance} ");
 
-            return joint;
+            //return joint;
 
             //Console.WriteLine($"Joint :{a._accountHolder} + & {b._accountHolder}");
+
+            //return new BankAccount
+            //{
+            //    _accountHolder = $"{a._accountHolder} & {b._accountHolder}",
+            //    _balance = a._balance + b._balance
+            //};
         }
 
         public static bool operator >(BankAccount a, BankAccount b)

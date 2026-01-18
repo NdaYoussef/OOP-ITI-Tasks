@@ -4,44 +4,46 @@
     {
         static void Main(string[] args)
         {
-            Complex complex = new Complex(0, 0);
+            Complex complex = new Complex(10, 11);
 
 
             //implicit casting 
-             complex = 5;
-            Console.WriteLine($"value of impilicit casting of real part of complex object = {complex.Real}");
+            //complex = 5;
+            //Console.WriteLine($"value of impilicit casting of real part of complex object = {complex.Real}");
 
-            //implicit casting with tuple
-            complex = (7, 8);
-            Console.WriteLine($"value of casting complex object into tuple int = ({complex.Real} , {complex.Img}) ");
+            ////implicit casting with tuple
+            //complex = (7, 8);
+            //Console.WriteLine($"value of casting complex object into tuple int = ({complex.Real} , {complex.Img}) ");
 
-            #region Increment
-            Console.WriteLine($"pre increment = ({++complex.Real},{++complex.Img}) ");
+            //#region Increment
+            //Console.WriteLine($"pre increment = ({++complex.Real},{++complex.Img}) ");
 
-            Console.WriteLine($"after pre increment = ({complex.Real},{complex.Img}) ");
+            //Console.WriteLine($"after pre increment = ({complex.Real},{complex.Img}) ");
 
-            Console.WriteLine($"post increment = ({complex.Real++},{complex.Img++}) ");
+            //Console.WriteLine($"post increment = ({complex.Real++},{complex.Img++}) ");
 
-            Console.WriteLine($"after post  increment = ({complex.Real},{complex.Img}) ");
+            //Console.WriteLine($"after post  increment = ({complex.Real},{complex.Img}) ");
 
-            #endregion
-            #region decrement
+            //#endregion
+            //#region decrement
 
-            Console.WriteLine($"pre decrement {--complex.Real}, {--complex.Img}");
-            Console.WriteLine($"after pre decrement = ({complex.Real},{complex.Img}) ");
+            //Console.WriteLine($"pre decrement {--complex.Real}, {--complex.Img}");
+            //Console.WriteLine($"after pre decrement = ({complex.Real},{complex.Img}) ");
 
-            Console.WriteLine($"post decrement = ({complex.Real--},{complex.Img--}) ");
+            //Console.WriteLine($"post decrement = ({complex.Real--},{complex.Img--}) ");
 
-            Console.WriteLine($"after post  decrement = ({complex.Real},{complex.Img}) ");
+            //Console.WriteLine($"after post  decrement = ({complex.Real},{complex.Img}) ");
 
-            #endregion
+            //#endregion
 
 
-            Complex complex2 = new Complex(5, 10);
-            bool result = complex > complex2;
-            Console.WriteLine($"value of greater comparison : {result}");
-
-            
+            //Complex complex2 = new Complex(5, 10);
+            //bool result = complex > complex2;
+            //Console.WriteLine($"value of greater comparison : {result}");
+            ++complex;
+            complex++;
+            Complex complex3 = complex++;
+            Console.WriteLine($"{complex3.Real}, {complex3.Img}");
             // Console.WriteLine($"Value of increment: {}");
         }
     }
