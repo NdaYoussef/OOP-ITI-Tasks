@@ -16,7 +16,10 @@ namespace BankAccount
         public static int totalaccount = 0;
         private static double _totalBankBalance = 0.0;
 
+        public BankAccount()
+        {
 
+        }
         public BankAccount(string name, double InitialBalance)
         {
             _accountHolder = name;
@@ -24,7 +27,7 @@ namespace BankAccount
 
             totalaccount++;
 
-            InitialBalance += _totalBankBalance;
+            _totalBankBalance += InitialBalance;
         }
 
 
@@ -37,7 +40,7 @@ namespace BankAccount
         public static double GetAveragebalance()
         {
 
-            double totalbalance = _totalBankBalance / totalaccount; 
+            double totalbalance = _totalBankBalance / totalaccount;
             if (totalaccount > 0)
             {
                 Console.WriteLine($"Average balance per account: {totalbalance}");
@@ -71,5 +74,50 @@ namespace BankAccount
         }
 
 
+        public static BankAccount operator +(BankAccount a, BankAccount b)
+        {
+
+            BankAccount joint = new BankAccount();
+            joint._accountHolder = a._accountHolder + b._accountHolder;
+            Console.WriteLine($"result of add operator overloading of 2 objects :{joint._accountHolder}");
+
+            joint._balance = a._balance + b._balance;
+            Console.WriteLine($"Sum of total balance: {joint._balance} ");
+
+            return joint;
+
+            //Console.WriteLine($"Joint :{a._accountHolder} + & {b._accountHolder}");
+        }
+
+        public static bool operator >(BankAccount a, BankAccount b)
+        {
+            return (a._balance > b._balance);
+        }
+
+        public static bool operator <(BankAccount a, BankAccount b)
+        {
+            return a._balance < b._balance;
+        }
+
+        public static bool operator ==(BankAccount a, BankAccount b)
+        { return a._accountNumber == b._accountNumber; }
+
+        public static bool operator !=(BankAccount a, BankAccount b)
+        { return a._accountNumber != b._accountNumber; }
     }
-}
+
+
+    //public override bool Equals(object obj)
+    //    {
+    //        if (obj is BankAccount other)
+    //        {
+    //            return this._balance == other._balance;
+    //        }
+    //        return false;
+    //    }
+
+    //    public override int GetHashCode()
+    //    {
+    //        return _balance.GetHashCode();
+    //    }
+    }
