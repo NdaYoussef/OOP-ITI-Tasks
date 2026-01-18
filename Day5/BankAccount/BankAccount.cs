@@ -66,7 +66,7 @@ namespace BankAccount
             if (amount > _balance)
                 return "Insufficient Balance!";
 
-            _balance   -= amount;
+            _balance -= amount;
             return $"New Balance = {_balance}";
         }
 
