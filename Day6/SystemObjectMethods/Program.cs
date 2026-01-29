@@ -13,7 +13,7 @@
             Console.WriteLine(object.ReferenceEquals(student1,student2));
             Console.WriteLine(student1 == student2);
 
-
+            
             Console.WriteLine($"student1 hash code {student1.GetHashCode()}");
             Console.WriteLine($"student2 hash code {student2.GetHashCode()}");
 

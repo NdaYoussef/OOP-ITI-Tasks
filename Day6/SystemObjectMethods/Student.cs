@@ -32,10 +32,7 @@ namespace SystemObjectMethods
             return base.ToString();
         }
 
-        protected object MemberwiseClone()
-        {
-            return MemberwiseClone();
-        }
+     
 
         public Student ShallowCopy()
         {
@@ -51,15 +48,16 @@ namespace SystemObjectMethods
         public override bool Equals(object obj)
         {
             if (obj is Student other)
-             return Name == other.Name && Id == other.Id && Grade == other.Grade;
-              
+                return Name == other.Name && Id == other.Id && Grade == other.Grade;
+
             return false;
         }
 
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return 
+                base.GetHashCode();
         }
 
     }
